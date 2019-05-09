@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'to-do';
+ task :String = "";
+ tasks : Array<String> = [
+   "Tarefa 1",
+   "Tarefa 2",
+   'Tarefa 3'
+ ];
+
+ addTask(){
+   this.tasks.push(this.task);
+   this.task="";
+ }
 }
